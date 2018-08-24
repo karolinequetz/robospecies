@@ -12,7 +12,7 @@ namespace ConsoleApp2
     {
 
         static string url = "https://useast.ensembl.org/info/about/species.html";
-
+        static 
         static void Main(string[] args)
         {
             //1 - Acesse o site "https://useast.ensembl.org/info/about/species.html" e inspecione a lista de espécies para identificar a estrutura da tabela
@@ -64,7 +64,7 @@ namespace ConsoleApp2
             }
         }
 
-        public static HtmlDocument getHtml(string url)
+        public static HtmlDocument getHtml(string url)//hjfd
         {
             var web = new HtmlWeb();
 
