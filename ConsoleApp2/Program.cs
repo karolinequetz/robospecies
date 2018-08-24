@@ -12,7 +12,7 @@ namespace ConsoleApp2
     {
 
         static string url = "https://useast.ensembl.org/info/about/species.html";
-        static 
+       
         static void Main(string[] args)
         {
             //1 - Acesse o site "https://useast.ensembl.org/info/about/species.html" e inspecione a lista de espécies para identificar a estrutura da tabela
@@ -21,8 +21,7 @@ namespace ConsoleApp2
             //4 - Uma vez que você obtiver o html da página na variável "doc", aplique Xpath com as funções "SelectSingleNode" e "SelectNodes"
             //5 - Para cada linha capturada, crie uma objeto Especie e adicione a uma lista do tipo Especie
 
-         
-
+            var doc = getHtml(url);
 
             var lista = doc.DocumentNode.SelectNodes("//tbody/tr");
 
@@ -64,7 +63,7 @@ namespace ConsoleApp2
             }
         }
 
-        public static HtmlDocument getHtml(string url)//hjfd
+        public static HtmlDocument getHtml(string url)
         {
             var web = new HtmlWeb();
 
