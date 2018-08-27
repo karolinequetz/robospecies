@@ -1,25 +1,58 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿//-----------------------------------------------------------------------
+// <copyright file="species.cs" company="Sprocket Enterprises">
+//     Copyright (c) Sprocket Enterprises. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 namespace ConsoleApp2
 {
-    class species
+    /// <summary>
+    /// Class Species
+    /// </summary>
+    public class Species
     {
+        /// <summary>
+        /// Gets or sets species name
+        /// </summary>
+        public string CommonName { get; set; }
 
+        /// <summary>
+        /// Gets or sets scientific name
+        /// </summary>
+        public string ScientifName { get; set; }
 
+        /// <summary>
+        /// Gets or sets ID
+        /// </summary>
+        public string TaxonId { get; set; }
 
+        /// <summary>
+        /// Gets or sets Assembly
+        /// </summary>
+        public string EnsemblAssembly { get; set; }
 
-        public  string commonName {get; set;}
-        public string scientifName { get; set;}
-        public string taxonId { get; set; }
-        public string ensemblAssembly { get; set; }
-        public string  accession { get; set; }
-        public string genebuildMethod { get; set; }
-        public string variationDatabase { get; set; }
-        public string regulationDatabase { get; set; }
-        public string  preAssembly { get; set; }
+        /// <summary>
+        /// Gets or sets Accession
+        /// </summary>
+        public string Accession { get; set; }
+
+        /// <summary>
+        /// Gets or sets Gene Method
+        /// </summary>
+        public string GenebuildMethod { get; set; }
+
+        /// <summary>
+        /// Gets or sets Variation database
+        /// </summary>
+        public string VariationDatabase { get; set; }
+
+        /// <summary>
+        /// Gets or sets Regulation database
+        /// </summary>
+        public string RegulationDatabase { get; set; }
+
+        /// <summary>
+        /// Gets or sets Pre assembly
+        /// </summary>
+        public string PreAssembly { get; set; }
     }
 }

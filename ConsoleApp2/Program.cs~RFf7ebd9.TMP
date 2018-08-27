@@ -15,15 +15,12 @@ namespace ConsoleApp2
     /// </summary>
     public partial class Program
     {
-        /// <summary>
-        /// Url de consult
-        /// </summary>
-        private static string url = "https://useast.ensembl.org/info/about/species.html";
+        public static string url = "https://useast.ensembl.org/info/about/species.html";
 
         /// <summary>
         /// Main Method
         /// </summary>
-        /// <param name="args">Main args</param>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             Regex eR = new Regex("formosa$", RegexOptions.None);
@@ -76,10 +73,10 @@ namespace ConsoleApp2
         }
 
         /// <summary>
-        /// Get Html
+        /// GetHtml
         /// </summary>
-        /// <param name="url">url html</param>
-        /// <returns>html url</returns>
+        /// <param name="url"></param>
+        /// <returns></returns>
         public static HtmlDocument GetHtml(string url)
         {
             var web = new HtmlWeb();
