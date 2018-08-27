@@ -34,34 +34,7 @@ namespace ConsoleApp2
 
             foreach (var l in lista)
             {
-                var novaespecie = new Species();
-
-                var node = l.SelectSingleNode("./td[1]");
-                novaespecie.CommonName = node.InnerText;
-
-                node = l.SelectSingleNode("./td[2]");
-                novaespecie.ScientifName = node.InnerText;
-
-                node = l.SelectSingleNode("./td[3]");
-                novaespecie.TaxonId = node.InnerText;
-
-                node = l.SelectSingleNode("./td[4]");
-                novaespecie.EnsemblAssembly = node.InnerText;
-
-                node = l.SelectSingleNode("./td[5]");
-                novaespecie.Accession = node.InnerText;
-
-                node = l.SelectSingleNode("./td[6]");
-                novaespecie.GenebuildMethod = node.InnerText;
-
-                node = l.SelectSingleNode("./td[7]");
-                novaespecie.VariationDatabase = node.InnerText;
-
-                node = l.SelectSingleNode("./td[8]");
-                novaespecie.RegulationDatabase = node.InnerText;
-
-                node = l.SelectSingleNode("./td[9]");
-                novaespecie.PreAssembly = node.InnerText;
+                Species novaespecie = CriaSpecie(l);
 
                 listaespecies.Add(novaespecie);
             }
@@ -73,6 +46,39 @@ namespace ConsoleApp2
                     Console.WriteLine(string.Format("{0}", li.InnerText));
                 }
             }
+        }
+
+        private static Species CriaSpecie(HtmlNode l)
+        {
+            var novaespecie = new Species();
+
+            var node = l.SelectSingleNode("./td[1]");
+            novaespecie.CommonName = node.InnerText;
+
+            node = l.SelectSingleNode("./td[2]");
+            novaespecie.ScientifName = node.InnerText;
+
+            node = l.SelectSingleNode("./td[3]");
+            novaespecie.TaxonId = node.InnerText;
+
+            node = l.SelectSingleNode("./td[4]");
+            novaespecie.EnsemblAssembly = node.InnerText;
+
+            node = l.SelectSingleNode("./td[5]");
+            novaespecie.Accession = node.InnerText;
+
+            node = l.SelectSingleNode("./td[6]");
+            novaespecie.GenebuildMethod = node.InnerText;
+
+            node = l.SelectSingleNode("./td[7]");
+            novaespecie.VariationDatabase = node.InnerText;
+
+            node = l.SelectSingleNode("./td[8]");
+            novaespecie.RegulationDatabase = node.InnerText;
+
+            node = l.SelectSingleNode("./td[9]");
+            novaespecie.PreAssembly = node.InnerText;
+            return novaespecie;
         }
 
         /// <summary>
@@ -88,5 +94,6 @@ namespace ConsoleApp2
 
             return doc;
         }
+       
     }
 }
