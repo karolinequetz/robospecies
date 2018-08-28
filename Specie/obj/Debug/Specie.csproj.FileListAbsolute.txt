@@ -8,3 +8,6 @@ C:\Users\U6072092\source\repos\robospecies\Specie\obj\Debug\Specie.csproj.CoreCo
 C:\Users\U6072092\source\repos\robospecies\Specie\obj\Debug\Specie.csproj.CopyComplete
 C:\Users\U6072092\source\repos\robospecies\Specie\obj\Debug\Specie.exe
 C:\Users\U6072092\source\repos\robospecies\Specie\obj\Debug\Specie.pdb
+C:\Users\U6072092\Source\Repos\robospecies\Specie\bin\Debug\Newtonsoft.Json.dll
+C:\Users\U6072092\Source\Repos\robospecies\Specie\bin\Debug\Newtonsoft.Json.xml
+C:\Users\U6072092\Source\Repos\robospecies\Specie\obj\Debug\Specie.csprojAssemblyReference.cache
