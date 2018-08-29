@@ -1,0 +1,13 @@
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\bin\Debug\NovoExercicioSerie2.exe.config
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\bin\Debug\NovoExercicioSerie2.exe
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\bin\Debug\NovoExercicioSerie2.pdb
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\bin\Debug\HtmlAgilityPack.dll
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\bin\Debug\HtmlAgilityPack.xml
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\obj\Debug\NovoExercicioSerie2.csproj.CoreCompileInputs.cache
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\obj\Debug\NovoExercicioSerie2.csproj.CopyComplete
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\obj\Debug\NovoExercicioSerie2.exe
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\obj\Debug\NovoExercicioSerie2.pdb
+C:\Users\U6072092\Source\Repos\robospecies\NovoExercicioSerie2\obj\Debug\NovoExercicioSerie2.csprojAssemblyReference.cache

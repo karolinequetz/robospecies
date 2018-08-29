@@ -1,0 +1,28 @@
+﻿using HtmlAgilityPack;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NovoExercicioSerie2
+{
+    class Program
+    {
+        public static string url = "https://pt.petitchef.com/lista-de-receitas";
+        public static List<Receita> receitas = new List<Receita>();
+        static void Main(string[] args)
+        {
+            var doc = GetHtml(url);
+            var lista = doc.DocumentNode.SelectNodes("//body/div[@id = 'p-content']");
+
+
+        }
+        public static HtmlDocument GetHtml (string url)
+        {
+            var web = new HtmlWeb();
+            var doc = web.Load(url);
+            return doc;
+        }
+    }
+}

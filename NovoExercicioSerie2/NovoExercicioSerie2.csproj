@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B060F4B7-324E-4FE1-BA3B-F498E692EC2C}</ProjectGuid>
+    <ProjectGuid>{452D2A2C-4D1E-4430-B4D1-D8B2F74DF14E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>UltimoExercicioSerie1</RootNamespace>
-    <AssemblyName>UltimoExercicioSerie1</AssemblyName>
+    <RootNamespace>NovoExercicioSerie2</RootNamespace>
+    <AssemblyName>NovoExercicioSerie2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,9 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="People.cs" />
+    <Compile Include="Info.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receita.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
