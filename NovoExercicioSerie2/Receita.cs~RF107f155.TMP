@@ -25,11 +25,9 @@ namespace NovoExercicioSerie2
                 var split = text.Split('/');
 
                 string avaliacao = split[0];
-
-           
-               // string votos = split[1];
+                string votos = split[1]
                 
-               // votos = Regex.Match(votos, @"\d+").Value;
+                votos = Regex.Match(votos, @"\d+").Value;
 
                     //.Replace(" votos", string.Empty);
                 //novaReceita.Avaliacao = text;   
@@ -45,10 +43,7 @@ namespace NovoExercicioSerie2
             if (node != null)
             {
                 var text = node.Attributes["title"].Value;
-                var split = text.Split('/');
 
-                string votos = split[2];
-                votos = Regex.Match(votos, @"\d+").Value;
             }
         }
         public void CapturaNome(HtmlNode r)

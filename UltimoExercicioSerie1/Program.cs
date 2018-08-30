@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,12 +14,13 @@ namespace UltimoExercicioSerie1
         static void Main(string[] args)
         {
 
+            var json = new WebClient().DownloadString("https://gist.githubusercontent.com/dalgard/3651234da390712c04f5/raw/fa56b499c10051af1cfdb9f71f8d9e5595cb3660/peopleMock.json");
             HtmlDocument doc = GetHtml(url);
             var lista = doc.DocumentNode.SelectNodes("//body/pre");
 
             foreach (var item in lista)
             {
-                //People nova =(item);
+               
 
               
             }
