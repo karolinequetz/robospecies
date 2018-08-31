@@ -10,7 +10,10 @@ namespace revisão
     {
         static void Main(string[] args)
         {
+            int inteiro;
+            Console.WriteLine(inteiro);
 
+            Console.ReadKey();
 
         }
     }
