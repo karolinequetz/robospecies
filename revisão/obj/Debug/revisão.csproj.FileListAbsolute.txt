@@ -1,0 +1,7 @@
+C:\Users\U6072092\Source\Repos\robospecies\revisão\bin\Debug\revisão.exe.config
+C:\Users\U6072092\Source\Repos\robospecies\revisão\bin\Debug\revisão.exe
+C:\Users\U6072092\Source\Repos\robospecies\revisão\bin\Debug\revisão.pdb
+C:\Users\U6072092\Source\Repos\robospecies\revisão\obj\Debug\revisão.csprojAssemblyReference.cache
+C:\Users\U6072092\Source\Repos\robospecies\revisão\obj\Debug\revisão.csproj.CoreCompileInputs.cache
+C:\Users\U6072092\Source\Repos\robospecies\revisão\obj\Debug\revisão.exe
+C:\Users\U6072092\Source\Repos\robospecies\revisão\obj\Debug\revisão.pdb

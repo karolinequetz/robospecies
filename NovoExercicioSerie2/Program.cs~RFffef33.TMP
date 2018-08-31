@@ -18,21 +18,19 @@ namespace NovoExercicioSerie2
             int i;
 
             var doc = GetHtml(index);
-            var lista = doc.DocumentNode.SelectNodes("//div[@class='pages']/a");
+            var lista = doc.DocumentNode.SelectNodes("//div[@class='pages']/a"); 
 
             foreach (var node in lista)
             {
                 var linhas = node.SelectNodes("//div[@class='item clearfix']");
-
-                foreach (var linha in linhas)
-                    ReceitasCheff(linha);
+                receitas.AddRange(from linha in linhas select ReceitasCheff(linha));
 
                 if (HasNext(node, out i))
                 {
                     doc = GetHtml(string.Format(url, node.Attributes["href"].Value));
                 }
             }
-
+      
         }
         public static HtmlDocument GetHtml(string url)
         {
@@ -40,25 +38,25 @@ namespace NovoExercicioSerie2
             var doc = web.Load(url);
             return doc;
         }
-        public static void ReceitasCheff(HtmlNode r)
+        public static Receita ReceitasCheff(HtmlNode r)
         {
-            var verifica = r.SelectSingleNode("./div/h2[@class='ir-title']/a");
-            if (verifica != null)
-            {
-                var novaReceita = new Receita();
+            var novaReceita = new Receita();
+            
+            novaReceita.CapturaAvaliacaoNota(r);
+            novaReceita.CapturaVotos(r);
+            novaReceita.CapturaNome(r);
+            novaReceita.CapturaIngredientes(r);
+            novaReceita.CapturaIngredientes(r);
+            //novaReceita.CapturaLinkImagem(r);
+            novaReceita.CapturaTipo(r);
+            novaReceita.CapturaDificuldade(r);
+            novaReceita.CapturaTempoPreparo(r);
+            novaReceita.TempoCozedura(r);
 
-                novaReceita.CapturaAvaliacaoNota(r);
-                novaReceita.CapturaVotos(r);
-                novaReceita.CapturaNome(r);
-                novaReceita.CapturaIngredientes(r);
-                novaReceita.CapturaIngredientes(r);
-                novaReceita.CapturaLinkImagem(r);
-                novaReceita.CapturaInformacoes(r);
 
-                receitas.Add(novaReceita);
-            }
+
+            return novaReceita;
         }
-
         private static bool HasNext(HtmlNode node, out int i)
         {
             var li = node.InnerText;

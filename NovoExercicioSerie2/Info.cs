@@ -10,77 +10,34 @@ namespace NovoExercicioSerie2
         public string TempoPreparo { get; set; }
         public string TempoCozedura { get; set; }
 
-        public void CapturaTipo(HtmlNode li)
+        public void CapturaTipo(HtmlNode r)
         {
-         
-            var node = li.SelectSingleNode("//div[@class='prop']/span[1]");
-           var texto = node.InnerText;
+            var node = r.SelectSingleNode("./div/div[@class='prop']/span[1]");
+            var texto = node.InnerText;
+            this.Tipo = texto;
         }
 
-        public  void CapturaDificuldade(HtmlNode r)
+        public void CapturaDificuldade(HtmlNode r)
         {
-            var node = r.SelectSingleNode("//div[@class='prop']/span[2]");
-           var text = node.InnerText;
+            var node = r.SelectSingleNode("./div/div[@class='prop']/span[2]");
+            var texto = node.InnerText;
+            this.Dificuldade = texto;
         }
-        public  void CapturaTempoPreparo(HtmlNode r)
+
+        public void CapturaTempoPreparo(HtmlNode r)
         {
-            var node = r.SelectSingleNode("//div[@class='prop']/span[3]");
-            var text = node.InnerText;
+            var node = r.SelectSingleNode("./div/div[@class='prop']/span[3]");
+            var texto = node.InnerText;
+            this.TempoPreparo = texto;
         }
-        public  void CapturaCozedura(HtmlNode r)
-       {
-            var node = r.SelectSingleNode("//div[@class='prop']/span[4]");
-            var text = node.InnerText;
-
+        public void CapturaCozedura(HtmlNode r)
+        {
+            var node = r.SelectSingleNode("./div/div[@class='prop']/span[4]");
+            var texto = node.InnerText;
+            this.TempoCozedura = texto;
         }
-      //  public static void CapturaTipo(HtmlNode r)
-        //{
-        //    var node = r.SelectSingleNode("//div[@class='prop']/span[@class ='pi']");
-        //    var text = node.InnerText;
-
-
-        //public static Info CapturarInformacoes(HtmlNode li)
-        //{
-
-        //    var informa = new Info();
-
-
-        //    var node = li.SelectSingleNode("//div[@class='prop']/span[1]");
-        //    informa.Tipo = node.InnerText;
-
-        //    node = li.SelectSingleNode("//div[@class='prop']/span[2]");
-        //    informa.Dificuldade = node.InnerText;
-
-        //    node = li.SelectSingleNode("//div[@class='prop']/span[3]");
-        //    informa.TempoPreparo = node.InnerText;
-
-        //    node = li.SelectSingleNode("//div[@class='prop']/span[4]");
-        //    informa.TempoCozedura = node.InnerText;
-
-
-
-
-
-        //    return informa;
 
     }
 
-
-
 }
-    //public static void CapturaDificuldade(HtmlNode r)
-    //{
-    //    var node = r.SelectSingleNode("//div[@class='prop']/span[1]");
-    //    var text = node.InnerText;
-    //}
-    //public static void CapturaTempoPreparo(HtmlNode r)
-    //{
-    //    var node = r.SelectSingleNode("//div[@class='prop']/span[3]");
-    //    var text = node.InnerText;
-    //}
-    //public static void CapturaCozedura(HtmlNode r)
-    //{
-    //    var node = r.SelectSingleNode("//div[@class='prop']/span[4]");
-    //    var text = node.InnerText;
 
-    //}

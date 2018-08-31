@@ -26,14 +26,14 @@ namespace NovoExercicioSerie2
 
                 string avaliacao = split[0];
 
-           
-               // string votos = split[1];
-                
-               // votos = Regex.Match(votos, @"\d+").Value;
 
-                    //.Replace(" votos", string.Empty);
+                // string votos = split[1];
+
+                // votos = Regex.Match(votos, @"\d+").Value;
+
+                //.Replace(" votos", string.Empty);
                 //novaReceita.Avaliacao = text;   
-                
+
             }
 
 
@@ -47,39 +47,48 @@ namespace NovoExercicioSerie2
                 var text = node.Attributes["title"].Value;
                 var split = text.Split('/');
 
-                string votos = split[2];
+                string votos = split[1];
                 votos = Regex.Match(votos, @"\d+").Value;
+                this.Votos = votos.Length;
             }
         }
         public void CapturaNome(HtmlNode r)
         {
 
-            var node = r.SelectSingleNode("//h2[@class='ir-title']/a");
+            var node = r.SelectSingleNode("./div/h2[@class='ir-title']/a");
             var text = node.Attributes["title"];
+            this.Nome = text.Value;
         }
         public void CapturaIngredientes(HtmlNode r)
         {
-            var node = r.SelectSingleNode("//div[@class = 'ingredients']");
-           
+            var node = r.SelectSingleNode("./div/div[@class = 'ingredients']");
+            var texto = node.InnerText;
+            this.Ingredientes = texto;
 
         }
         public void CapturaLinkReceita(HtmlNode r)
         {
-            var node = r.SelectSingleNode("//h2/a");
+            var node = r.SelectSingleNode("./div/h2/a");
+            var texto = node.InnerText;
+            this.LinkReceita = texto;
 
         }
-        public void CapturaLinkImagem (HtmlNode r)
+        public void CapturaLinkImagem(HtmlNode r)
         {
-            var node = r.SelectSingleNode("//div[@class='i-left']/img");
+            var node = r.SelectSingleNode("./div[@class='i-left']/img");
+            string link = "https://pt.petitchef.com/";
+            this.LinkImagem = link + node.Attributes["src"].Value;
         }
-        public void capturaInformacao (HtmlNode r)
+        public void CapturaInformacoes(HtmlNode r)
         {
-            Informacoes.CapturaTipo(r);
-            Informacoes.CapturaDificuldade(r);
-            Informacoes.CapturaTempoPreparo(r);
-            Informacoes.CapturaDificuldade(r);
+            var info = new Info();
+
+            info.CapturaTipo(r);
+            info.CapturaDificuldade(r);
+            info.CapturaTempoPreparo(r);
+            info.CapturaCozedura(r);
+
+            this.Informacoes = info;
         }
-      
-       
     }
 }

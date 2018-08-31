@@ -15,7 +15,6 @@ C:\Users\U6072092\Source\Repos\robospecies\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
 C:\Users\U6072092\Source\Repos\robospecies\ConsoleApp2\bin\Debug\HtmlAgilityPack.dll
 C:\Users\U6072092\Source\Repos\robospecies\ConsoleApp2\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\U6072092\Source\Repos\robospecies\ConsoleApp2\bin\Debug\HtmlAgilityPack.xml
-C:\Users\U6072092\Source\Repos\robospecies\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
 C:\Users\U6072092\Source\Repos\robospecies\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
 C:\Users\U6072092\Source\Repos\robospecies\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CopyComplete
 C:\Users\U6072092\Source\Repos\robospecies\ConsoleApp2\obj\Debug\ConsoleApp2.exe

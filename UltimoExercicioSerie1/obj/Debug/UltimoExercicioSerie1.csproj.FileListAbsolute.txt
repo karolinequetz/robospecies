@@ -6,7 +6,6 @@ C:\Users\U6072092\Source\Repos\robospecies\UltimoExercicioSerie1\bin\Debug\Newto
 C:\Users\U6072092\Source\Repos\robospecies\UltimoExercicioSerie1\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\U6072092\Source\Repos\robospecies\UltimoExercicioSerie1\bin\Debug\HtmlAgilityPack.xml
 C:\Users\U6072092\Source\Repos\robospecies\UltimoExercicioSerie1\bin\Debug\Newtonsoft.Json.xml
-C:\Users\U6072092\Source\Repos\robospecies\UltimoExercicioSerie1\obj\Debug\UltimoExercicioSerie1.csprojAssemblyReference.cache
 C:\Users\U6072092\Source\Repos\robospecies\UltimoExercicioSerie1\obj\Debug\UltimoExercicioSerie1.csproj.CoreCompileInputs.cache
 C:\Users\U6072092\Source\Repos\robospecies\UltimoExercicioSerie1\obj\Debug\UltimoExercicioSerie1.csproj.CopyComplete
 C:\Users\U6072092\Source\Repos\robospecies\UltimoExercicioSerie1\obj\Debug\UltimoExercicioSerie1.exe
