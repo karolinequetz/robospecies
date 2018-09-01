@@ -52,6 +52,7 @@ namespace NovoExercicioSerie2
                 this.Votos = votos.Length;
             }
         }
+
         public void CapturaNome(HtmlNode r)
         {
 

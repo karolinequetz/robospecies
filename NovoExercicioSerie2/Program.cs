@@ -15,22 +15,27 @@ namespace NovoExercicioSerie2
         public static List<Receita> receitas = new List<Receita>();
         static void Main(string[] args)
         {
-            int i;
-
             var doc = GetHtml(index);
-            var lista = doc.DocumentNode.SelectNodes("//div[@class='pages']/a");
 
-            foreach (var node in lista)
+            var prox = doc.DocumentNode.SelectSingleNode("//div[@class='pages']/span/following-sibling::a");
+            string novaUrl = string.Empty;
+
+            int i = 1;
+            while (TemAlgo(prox, out novaUrl))
             {
-                var linhas = node.SelectNodes("//div[@class='item clearfix']");
+                var linhas = doc.DocumentNode.SelectNodes("//div[@class='item clearfix']");
 
                 foreach (var linha in linhas)
                     ReceitasCheff(linha);
 
-                if (HasNext(node, out i))
+                doc = GetHtml(novaUrl);
+
+                if(i == 11)
                 {
-                    doc = GetHtml(string.Format(url, node.Attributes["href"].Value));
+                    Console.Write("lalalala");
                 }
+                i++;
+                prox = doc.DocumentNode.SelectSingleNode("//div[@class='pages']/span/following-sibling::a");
             }
 
         }
@@ -59,13 +64,15 @@ namespace NovoExercicioSerie2
             }
         }
 
-        private static bool HasNext(HtmlNode node, out int i)
+        private static bool TemAlgo(HtmlNode node, out string texto)
         {
-            var li = node.InnerText;
-            return int.TryParse(li, out i);
+            texto = string.Empty;
 
+            if (node == null)
+                return false;
 
-
+            texto = "https://pt.petitchef.com/" + node.Attributes["href"].Value;
+            return true;
         }
     }
 }

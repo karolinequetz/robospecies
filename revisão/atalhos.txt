@@ -1,0 +1,21 @@
+﻿F12 = Vai até a origem da variável ou declaração da função
+
+### DEBUG ###
+F9 = Adiciona BreakPoint
+F10 = Executa uma linha
+F11 = Entra no na função
+F5 = Executa até o próximo BreakPoint
+
+Atalhos Digitando
+Ctrl + D = Duplica Linha
+Ctrl + K + C = Comenta
+Ctrl + K + U = Descomenta
+Ctrl + R + M = Cria Função
+Alt + Setinhas = Move a Linha
+Ctrl + Shift + L = Apaga linha
+
+Atalhos Busca
+Ctrl + F = Busca texto
+Ctrl + H = Encontra e Substitui
+Ctrl + G = Encontra linha por número
+
